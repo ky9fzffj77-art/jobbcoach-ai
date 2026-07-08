@@ -51,7 +51,7 @@ ${utbildning}
        <div className="max-w-3xl mx-auto text-center py-10">
 
   <h1 className="text-5xl font-bold text-blue-700 mb-4">
-    Skapa ett starkare CV och personligt brev på några minuter
+    Skapa ett bättre CV och personligt brev på några minuter
   </h1>
 
         <p className="text-gray-600 mb-10">
