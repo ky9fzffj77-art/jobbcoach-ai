@@ -46,15 +46,13 @@ ${utbildning}
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-6">
 
-      <div className="max-w-3xl mx-auto text-center py-10">
+    
+       
+       <div className="max-w-3xl mx-auto text-center py-10">
 
-        <h1 className="text-5xl font-bold text-blue-700 mb-4">
-          AI Jobbcoach
-        </h1>
-
-        <p className="text-xl text-gray-700 mb-4">
-          Skapa ett professionellt CV och personligt brev på några minuter.
-        </p>
+  <h1 className="text-5xl font-bold text-blue-700 mb-4">
+    Skapa ett starkare CV och personligt brev på några minuter
+  </h1>
 
         <p className="text-gray-600 mb-10">
           Slipp börja från ett tomt dokument. Få hjälp att presentera din erfarenhet på bästa sätt.
