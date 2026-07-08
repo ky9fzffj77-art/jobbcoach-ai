@@ -128,15 +128,14 @@ ${utbildning}
     placeholder="Din e-post"
   />
 
- <a
-  href="https://docs.google.com/forms/d/e/1FAIpQLSeqDk_9NqE2o85LitIvenkR8so3f735_BS0Lkh0IGibncUeKQ/viewform?usp=publish-editor"
-  target="_blank"
-  className="block w-full bg-green-600 text-white p-3 rounded-lg font-bold text-center"
->
-  Jag vill vara med
-</a>
-        </div>
-      </div>
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSeqDk_9NqE2o85LitIvenkR8so3f735_BS0Lkh0IGibncUeKQ/viewform?usp=publish-editor"
+    target="_blank"
+    className="block w-full bg-green-600 text-white p-3 rounded-lg font-bold text-center"
+  >
+    Jag vill vara med
+  </a>
+</div>
 
     </main>
   );
