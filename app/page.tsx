@@ -17,10 +17,9 @@ Hej!
 
 Jag heter ${namn} och söker tjänsten som ${jobb}.
 
-Jag har erfarenhet av ${erfarenhet} och har utbildning inom ${utbildning}. 
-Jag är en engagerad person som tycker om att utvecklas och bidra med mina kunskaper.
+Genom min erfarenhet av ${erfarenhet} har jag utvecklat goda kunskaper och en stark vilja att bidra. Min utbildning inom ${utbildning} har gett mig en bra grund för att lyckas i rollen.
 
-Jag hoppas få möjligheten att berätta mer om mig själv vid en intervju.
+Jag är engagerad, ansvarstagande och motiverad att utvecklas vidare. Jag ser fram emot möjligheten att berätta mer om hur jag kan bidra hos er.
 
 Med vänliga hälsningar,
 ${namn}
@@ -28,9 +27,10 @@ ${namn}
 
 CV-SAMMANFATTNING
 
-Namn: ${namn}
+Namn:
+${namn}
 
-Söker:
+Måltjänst:
 ${jobb}
 
 Erfarenhet:
@@ -43,76 +43,78 @@ ${utbildning}
     setResultat(text);
   }
 
-  function kopiera() {
-    navigator.clipboard.writeText(resultat);
-    alert("Texten är kopierad!");
-  }
-
   return (
-    <main className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-      <div className="bg-white rounded-2xl shadow-xl p-8 max-w-xl w-full">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-6">
 
-        <h1 className="text-4xl font-bold text-center mb-4">
+      <div className="max-w-3xl mx-auto text-center py-10">
+
+        <h1 className="text-5xl font-bold text-blue-700 mb-4">
           AI Jobbcoach
         </h1>
 
-        <p className="text-gray-600 text-center mb-6">
-          Skapa ett CV och personligt brev på några minuter.
+        <p className="text-xl text-gray-700 mb-4">
+          Skapa ett professionellt CV och personligt brev på några minuter.
         </p>
 
-        <input
-          className="w-full border p-3 rounded-lg mb-3"
-          placeholder="Ditt namn"
-          value={namn}
-          onChange={(e) => setNamn(e.target.value)}
-        />
+        <p className="text-gray-600 mb-10">
+          Slipp börja från ett tomt dokument. Få hjälp att presentera din erfarenhet på bästa sätt.
+        </p>
 
-        <input
-          className="w-full border p-3 rounded-lg mb-3"
-          placeholder="Vilket jobb söker du?"
-          value={jobb}
-          onChange={(e) => setJobb(e.target.value)}
-        />
+        <div className="bg-white rounded-2xl shadow-xl p-8 text-left">
 
-        <textarea
-          className="w-full border p-3 rounded-lg mb-3"
-          placeholder="Din erfarenhet"
-          value={erfarenhet}
-          onChange={(e) => setErfarenhet(e.target.value)}
-        />
+          <input
+            className="w-full border p-3 rounded-lg mb-4"
+            placeholder="Ditt namn"
+            value={namn}
+            onChange={(e) => setNamn(e.target.value)}
+          />
 
-        <input
-          className="w-full border p-3 rounded-lg mb-3"
-          placeholder="Din utbildning"
-          value={utbildning}
-          onChange={(e) => setUtbildning(e.target.value)}
-        />
+          <input
+            className="w-full border p-3 rounded-lg mb-4"
+            placeholder="Vilket jobb söker du?"
+            value={jobb}
+            onChange={(e) => setJobb(e.target.value)}
+          />
 
-        <button
-          onClick={skapaAnsokan}
-          className="w-full bg-blue-600 text-white p-3 rounded-lg font-bold"
-        >
-          Skapa min ansökan
-        </button>
+          <textarea
+            className="w-full border p-3 rounded-lg mb-4"
+            placeholder="Berätta om din erfarenhet"
+            value={erfarenhet}
+            onChange={(e) => setErfarenhet(e.target.value)}
+          />
+
+          <input
+            className="w-full border p-3 rounded-lg mb-4"
+            placeholder="Din utbildning"
+            value={utbildning}
+            onChange={(e) => setUtbildning(e.target.value)}
+          />
+
+          <button
+            onClick={skapaAnsokan}
+            className="w-full bg-blue-600 text-white p-3 rounded-lg font-bold hover:bg-blue-700"
+          >
+            Skapa min ansökan
+          </button>
+
+        </div>
 
         {resultat && (
-          <div className="mt-6">
+          <div className="bg-white rounded-2xl shadow-xl p-8 mt-8 text-left">
+            <h2 className="text-2xl font-bold mb-4">
+              Din ansökan
+            </h2>
+
             <textarea
-              className="w-full border p-3 rounded-lg h-64"
+              className="w-full border p-3 rounded-lg h-72"
               value={resultat}
               readOnly
             />
-
-            <button
-              onClick={kopiera}
-              className="w-full bg-green-600 text-white p-3 rounded-lg mt-3 font-bold"
-            >
-              Kopiera text
-            </button>
           </div>
         )}
 
       </div>
+
     </main>
   );
 }
