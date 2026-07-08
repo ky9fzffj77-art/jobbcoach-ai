@@ -114,7 +114,26 @@ ${utbildning}
         )}
 
       </div>
+<div className="mt-10 bg-blue-50 rounded-2xl p-6 text-center">
+  <h2 className="text-2xl font-bold mb-2">
+    Vill du få hjälp med din jobbansökan?
+  </h2>
 
+  <p className="text-gray-600 mb-4">
+    Vi bygger vidare på AI Jobbcoach. Lämna din e-post för att få uppdateringar.
+  </p>
+
+  <input
+    className="w-full border p-3 rounded-lg mb-3"
+    placeholder="Din e-post"
+  />
+
+  <button
+    className="w-full bg-green-600 text-white p-3 rounded-lg font-bold"
+  >
+    Jag vill vara med
+  </button>
+</div>
     </main>
   );
 }
