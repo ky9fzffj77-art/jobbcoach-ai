@@ -55,7 +55,7 @@ ${utbildning}
   </h1>
 
         <p className="text-gray-600 mb-10">
-          Slipp börja från ett tomt dokument. Få hjälp att presentera din erfarenhet på bästa sätt.
+          Fyll i några uppgifter och få hjälp att skapa en jobbansökan som lyfter fram dina styrkor.
         </p>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 text-left">
