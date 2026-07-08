@@ -135,8 +135,3 @@ ${utbildning}
 >
   Jag vill vara med
 </a>
-  </button>
-</div>
-    </main>
-  );
-}
