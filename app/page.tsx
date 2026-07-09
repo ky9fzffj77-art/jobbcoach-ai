@@ -127,6 +127,8 @@ ${utbildning}
         >
           Jag vill vara med
         </a>
+            </div>
+
       </div>
 
     </main>
